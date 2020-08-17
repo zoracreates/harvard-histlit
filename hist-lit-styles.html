@@ -17,6 +17,14 @@
         right: 0;
     }
 
+    #menu-bar.fixed {
+        position: static;
+    }
+
+    #page-wrapper {
+        margin-top: 0px !important;
+    }
+
     #page-title,
     .node-title,
     .page-search .title a,
@@ -89,14 +97,14 @@
     .breadcrumb,
     .breadcrumb a,
     .accordion .ui-widget-content a,
-    .accordion .ui-widget-content,
     a,
     a:visited {
         color: #AD2C26;
         font-weight: 600;
     }
 
-    #columns .block-boxes-os_boxes_html a, #columns .field-name-body a {
+    #columns .block-boxes-os_boxes_html a,
+    #columns .field-name-body a {
         text-decoration: none;
     }
 
@@ -561,15 +569,17 @@
     .cards .boxes-box-content .block-boxes-os_boxes_html.facu-card .boxes-box-content {
         background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/files/histlit/files/gold_laurels_on_barker_floor-tilt_correction.jpg);
         background-position: bottom center;
+        background-size: cover;
     }
 
     .cards .boxes-box-content .block-boxes-os_boxes_html.peer-card .boxes-box-content {
-        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/files/histlit/files/thompson_room_clock.jpg)
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/files/histlit/files/thompson_room_clock.jpg);
+        background-size: cover;
     }
 
     .cards .boxes-box-content .block-boxes-os_boxes_html.alum-card .boxes-box-content {
         background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(/files/histlit/files/remy.jpg);
-        background-position: right center;
+        background-position: right -150px;
     }
 
     /*fields of study */
@@ -684,6 +694,11 @@
 
         #layout_3_1_overlay .slide-copy {
             border-radius: 0px;
+        }
+
+        .cards .boxes-box-content .block-boxes-os_boxes_html.alum-card .boxes-box-content {
+            background-position: right center;
+            background-size: cover;
         }
 
 
